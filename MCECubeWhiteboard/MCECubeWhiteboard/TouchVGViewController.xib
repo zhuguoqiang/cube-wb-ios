@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TouchVGViewController">
+            <connections>
+                <outlet property="btnBack" destination="7TG-fY-OnC" id="ZAv-ro-O1W"/>
+                <outlet property="btnBlackPencil" destination="f0a-rY-dM3" id="98x-qt-67a"/>
+                <outlet property="btnBluePencil" destination="u4r-s7-Yde" id="zU6-rl-Kvg"/>
+                <outlet property="btnBrownPencil" destination="iIu-bl-r2M" id="Zn2-Qo-zOU"/>
+                <outlet property="btnCamera" destination="kdd-Ew-OCs" id="ZbJ-M5-lpw"/>
+                <outlet property="btnDarkGreenPencil" destination="wP8-kj-SXe" id="BJS-qr-Oi7"/>
+                <outlet property="btnDarkOrange" destination="VmX-Fj-cGd" id="Bfv-6t-RgH"/>
+                <outlet property="btnEraser" destination="xG3-4Z-n3m" id="UtI-3n-GeJ"/>
+                <outlet property="btnGreyPencil" destination="gyw-ba-AOa" id="nYW-er-ldn"/>
+                <outlet property="btnLightBluePencil" destination="jlU-9G-xsM" id="q2P-TL-fh7"/>
+                <outlet property="btnLightGreenPencil" destination="VCK-Jw-lig" id="eK3-AW-d5u"/>
+                <outlet property="btnRedPencil" destination="AQb-Jr-Mqr" id="Ys9-XS-VDF"/>
+                <outlet property="btnSetting" destination="f03-hi-9dT" id="7kT-84-aVT"/>
+                <outlet property="btnYellowPencil" destination="V8P-TD-PYU" id="Eou-Mx-mPv"/>
+                <outlet property="view" destination="jfb-ny-c3w" id="OZD-qW-zr2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jfb-ny-c3w">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TG-fY-OnC">
+                    <rect key="frame" x="18" y="16" width="30" height="30"/>
+                    <state key="normal" title="返回">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="Xos-uZ-TSp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdd-Ew-OCs">
+                    <rect key="frame" x="135" y="16" width="32" height="32"/>
+                    <state key="normal" title="camera" image="camera.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pickImage:" destination="-1" eventType="touchUpInside" id="Kut-VM-slu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f03-hi-9dT">
+                    <rect key="frame" x="259" y="18" width="30" height="30"/>
+                    <state key="normal" title="setting" image="Setting-1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSettingAction:" destination="-1" eventType="touchUpInside" id="33W-7N-VKX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQb-Jr-Mqr">
+                    <rect key="frame" x="2" y="482" width="27" height="166"/>
+                    <state key="normal" title="red" image="Red.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnRedPencilAction:" destination="-1" eventType="touchUpInside" id="cXe-fn-lAW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0a-rY-dM3">
+                    <rect key="frame" x="30" y="482" width="27" height="166"/>
+                    <state key="normal" title="black" image="Black.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBlackPencilAction:" destination="-1" eventType="touchUpInside" id="L5y-Pa-zYc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4r-s7-Yde">
+                    <rect key="frame" x="58" y="482" width="27" height="166"/>
+                    <state key="normal" title="blue" image="Blue.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBluePencilAction:" destination="-1" eventType="touchUpInside" id="hPc-Oq-m3U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIu-bl-r2M">
+                    <rect key="frame" x="86" y="482" width="27" height="166"/>
+                    <state key="normal" title="brown" image="Brown.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBrownPencilAction:" destination="-1" eventType="touchUpInside" id="Qpd-C7-WDT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyw-ba-AOa">
+                    <rect key="frame" x="114" y="482" width="27" height="166"/>
+                    <state key="normal" title="grey" image="Grey.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnGreyPencilAction:" destination="-1" eventType="touchUpInside" id="7r4-b6-SEj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8P-TD-PYU">
+                    <rect key="frame" x="172" y="482" width="27" height="166"/>
+                    <state key="normal" title="yellow" image="Yellow.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnYellowPencilAction:" destination="-1" eventType="touchUpInside" id="LxG-gE-lTU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlU-9G-xsM">
+                    <rect key="frame" x="231" y="482" width="27" height="166"/>
+                    <state key="normal" title="lightBlue" image="LightBlue.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLightBluePencilAction:" destination="-1" eventType="touchUpInside" id="D8u-L3-2DF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCK-Jw-lig">
+                    <rect key="frame" x="260" y="482" width="27" height="166"/>
+                    <state key="normal" title="lightGreen" image="LightGreen.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLightGreenPencilAction:" destination="-1" eventType="touchUpInside" id="Ynz-Zh-QEo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-kj-SXe">
+                    <rect key="frame" x="202" y="482" width="27" height="166"/>
+                    <state key="normal" title="darkGreen" image="DarkGreen.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnDarkGreenPencilAction:" destination="-1" eventType="touchUpInside" id="ZgC-iH-Wra"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmX-Fj-cGd">
+                    <rect key="frame" x="143" y="482" width="27" height="166"/>
+                    <state key="normal" title="darkOrange" image="DarkOrange.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnDarkOrangePencilAction:" destination="-1" eventType="touchUpInside" id="yo4-ze-aVa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG3-4Z-n3m">
+                    <rect key="frame" x="289" y="490" width="28" height="84"/>
+                    <state key="normal" title="eraser" image="Eraser.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clear:" destination="-1" eventType="touchUpInside" id="cNG-0O-yq7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="402" y="160"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Black.png" width="27" height="166"/>
+        <image name="Blue.png" width="27" height="166"/>
+        <image name="Brown.png" width="27" height="166"/>
+        <image name="DarkGreen.png" width="27" height="166"/>
+        <image name="DarkOrange.png" width="27" height="166"/>
+        <image name="Eraser.png" width="28" height="84"/>
+        <image name="Grey.png" width="27" height="166"/>
+        <image name="LightBlue.png" width="27" height="166"/>
+        <image name="LightGreen.png" width="27" height="166"/>
+        <image name="Red.png" width="27" height="166"/>
+        <image name="Setting-1.png" width="238" height="203"/>
+        <image name="Yellow.png" width="27" height="166"/>
+        <image name="camera.png" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
